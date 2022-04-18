@@ -1,0 +1,73 @@
+.btnCheck:active {
+    box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.18), inset 2px 2px 4px rgba(0, 0, 0, 0.24), inset -8px -8px 15px rgba(255, 255, 255, 0.02), inset 8px 8px 15px rgba(10, 46, 82, 0.21);
+}
+
+.btnOk {
+    background: #EAECF2;
+    box-shadow: 2px 2px 4px rgba(10, 46, 82, 0.12), -6px -6px 40px rgba(255, 255, 255, 0.63), 4px 4px 15px rgba(10, 46, 82, 0.11), inset 4px 4px 30px rgba(10, 46, 82, 0.11), inset -4px -4px 40px #FFFFFF;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #0A2E52;
+}
+
+.writeWordBlock {
+    display: grid;
+    grid-template-columns: 3fr auto;
+    justify-items: center;
+    margin: 60px;
+}
+
+.writeWordBlock input:focus {
+    outline: none;
+}
+
+.writeWordBlock input {
+    box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.18), inset 2px 2px 4px rgba(0, 0, 0, 0.24), inset -8px -8px 15px rgba(255, 255, 255, 0.02), inset 8px 8px 15px rgba(10, 46, 82, 0.21);
+    border-radius: 15px 0 0 15px;
+    border: none;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+
+.btnCheck {
+    box-shadow: 2px 2px 5px rgba(10, 46, 82, 0.16), -8px -8px 40px rgba(255, 255, 255, 0.56), 8px 8px 15px rgba(0, 0, 0, 0.17);
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #0A2E52;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btnCheck:hover {
+    opacity: .6;
+}
+
+.btnContainer {
+    display: grid;
+    grid-auto-flow: column;
+    max-width: 960px;
+    margin: 120px auto;
+    list-style-type: none;
+    padding: 0 30px;
+    column-gap: 30px;
+}
+
+span {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+}

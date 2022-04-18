@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+h3 {
+  font-weight: bold;
+  font-size: calc(18px + (24 - 16) * (100vw - 400px) / (800 - 400));
+}
+
+.progressBar {
+  position: absolute;
+  height: 12px;
+  background-image: url("./assets/img/progress-bar.svg");
+  border-radius: 0 20px 20px 0 ;
+  width: 0;
+  transition: .6s;
+}
+.progressBarContainer {
+  position: relative;
+  height: 12px;
+  background: #E9EBF1;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.69), inset -2px -2px 15px rgba(255, 255, 255, 0.79), inset 2px 2px 15px rgba(10, 46, 82, 0.44);
+}
+
+.btnBack, .btnNext {
+  box-shadow: 2px 2px 5px rgba(10, 46, 82, 0.16), -8px -8px 40px rgba(255, 255, 255, 0.56), 8px 8px 15px rgba(0, 0, 0, 0.17);
+  border-radius: 50px;
+  background-image: url("./assets/img/arrow.svg");
+  height: 40px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  border: none;
+  background-position: center;
+}
+
+.btnNext {
+  transform: scale(-1, 1);
+  width: 190px;
+  margin: 100px auto;
+  cursor: pointer;
+}
+
+.results {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0A2E52;
+}
+
+.gameNav {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1020px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.gameContainer {
+  max-width: 1020px;
+  margin: 0 auto;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+@media (max-width: 1040px) {
+  .gameContainer {
+      margin: 0 30px;
+  }
+}

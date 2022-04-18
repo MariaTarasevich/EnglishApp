@@ -1,0 +1,43 @@
+.nav {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 60px;
+    padding-right: 50px;
+}
+
+.nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 50%;
+    height: 3px;
+    bottom: -12px;
+    border-radius: 5px;
+    transform: translate(-50%, 0);
+    transition: 0.6s;
+}
+
+.nav a[class^='active']::after {
+    background-color: white;
+    width: 120%;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        grid-auto-flow: row;
+    }
+
+    .nav.show {
+        display: grid;
+    }
+}

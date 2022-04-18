@@ -1,0 +1,76 @@
+.gameBlock img {
+    position: absolute;
+    background: none;
+    max-height: 90%;
+    right: 6px;
+    bottom: 12px;
+}
+
+
+.gameBlock p{
+    position: absolute;
+    max-width: 220px;
+    bottom: 3px;
+    left: 34px;
+    font-size: 14px;
+}
+
+.gameBlock h2{
+    font-size: 2vw;
+    padding-top: 12%;
+    padding-left: 12%;
+    margin: 0;
+    min-height: 20vh;
+    max-width: 12vw;
+}
+
+.gameBlock {
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(10, 46, 82, 0.12), -6px -6px 40px rgba(255, 255, 255, 0.63), 4px 4px 15px rgba(10, 46, 82, 0.11), inset 4px 4px 30px rgba(10, 46, 82, 0.11), inset -4px -4px 40px #FFFFFF;
+    border-radius: 30px;
+    background-image: url("./../../assets/img/bg-game.svg");
+    background-position: 30px 30px;
+    background-repeat: no-repeat;
+    max-width: 460px;
+    background-size: 86%;
+    background-color: #e9eef2;
+    padding: 12px;
+    box-sizing: border-box;
+    transition: .6s;
+}
+
+.gameBlock:hover {
+    transform: scale(1.05);
+}
+
+.gameContainer a > div {
+    height: 100%;
+    width: 100%;
+}
+.gameContainer a {
+    display: contents;
+    text-decoration: none;
+    width: 100%;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-items: center;
+}
+
+@media (max-width: 1200px) {
+    .gameBlock img {
+        max-height: 50%;
+        top: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gameContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

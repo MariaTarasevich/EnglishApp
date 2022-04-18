@@ -1,0 +1,14 @@
+.header {
+    display: grid;
+    width: 100vw;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #265B91;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.header svg {
+    height: 50px;
+}
